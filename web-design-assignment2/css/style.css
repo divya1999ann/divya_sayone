@@ -1,0 +1,104 @@
+
+header{
+    background-color: rgb(56, 58, 58);
+    overflow: hidden;
+}
+.t1{
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn1{
+    color:white;
+    background-color: orange;
+    width: 150px;
+}
+.body-upper{
+  background-color:#ECECEC
+}
+
+.f1{
+  margin-top: 80px;
+}
+.f2{
+  font-weight: bold;
+}
+.f3{
+  font-size:25px;
+  padding-top: 10px;
+}
+
+.head1{
+  font-weight: bold;
+  font-size:25px;
+}
+.p1{
+  font-size: 14px;
+}
+footer{
+    background-color: rgb(56, 58, 58);
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+.card{
+  border:none;
+}
+ 
+  html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.c1{
+  font-weight: bold;
+}
+
+
+
+/*  .navList {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto !important;
+}
+.navList li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    
+}
+h6 {
+    padding-top: 2% ;
+    padding-left: 1%;
+}
+
+  /* Style the links inside the navigation bar 
+  .header ul li a{
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }*/
+  
+  /* Change the color of links on hover */
+ /* .header a:hover {
+    background-color: rgb(170, 157, 157);
+    color: black;
+  }*/

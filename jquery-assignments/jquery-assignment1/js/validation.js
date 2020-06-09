@@ -6,6 +6,8 @@ $(document).ready(function() {
                 age = today.getFullYear() - ui.selectedYear;
                 $('#age').val(age);
             },
+            changeYear:true,
+            changeMonth:true
            
         });
     });

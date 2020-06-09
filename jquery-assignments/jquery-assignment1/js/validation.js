@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 $(document).ready(function(){
   $('#countries').select2();
-  $('#countries').on('select2:select', function (e) {
+  $('#countries').on('select2:select', function (e) {   
   $('#state').select2();
   $("#state").empty();
   var $states= {
@@ -27,7 +27,7 @@ $(document).ready(function(){
   var t=$states[data.text];
   $("#state").select2({
     data: t
-  })
+  });
 });
 
 //$('#countries').select2('destroy');

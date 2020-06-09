@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Blog Page</title>
+</head>
+<body>
+    <h1 style="text-align: center;font-weight: bold;">Blog Posts</h1>
+
+    <table id="blog-table" class="table table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">UserID</th>
+                <th scope="col">ID</th>
+                <th scope="col">TITLE</th>
+                <th scope="col">CONTENT</th>
+            </tr>
+        </thead> 
+    </table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script> 
+
+<script>  
+    $(document).ready(function() {  
+        $.ajax({  
+            url: 'https://jsonplaceholder.typicode.com/posts',  
+            type: 'GET', 
+            dataType: 'json', 
+            success: function(data, textStatus, xhr) {  
+
+                $.each(data,function(key,item){
+                    var $text = $('<tr>').append(
+                        $('<td>').text(item.userId),
+                        $('<td>').text(item.id),
+                        $('<td>').text(item.title),
+                        $('<td>').text(item.body)
+                    );
+                    $("#blog-table").append($text); 
+                });
+            },  
+            error: function(xhr, textStatus, errorThrown) {  
+                console.log('Error in Database'); 
+            }  
+        });  
+    });  
+</script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>     
+
+</body>
+</html>

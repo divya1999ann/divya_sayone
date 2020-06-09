@@ -29,6 +29,10 @@ $(document).ready(function(){
     data: t
   })
 });
+
+//$('#countries').select2('destroy');
+//$('#example').off('select2:select');
+//$('#state').select2('destroy');
 });
     
 
